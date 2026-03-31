@@ -13,9 +13,9 @@ import { mkdirSync } from "node:fs"
 import * as os from "node:os"
 import * as path from "node:path"
 import { z } from "zod"
-import type { OpencodeClient } from "../kdco-primitives"
-import { getProjectId, logWarn } from "../kdco-primitives"
-import { parsePersistedLaunchMetadata, serializePersistedLaunchMetadata } from "./launch-context"
+import type { OpencodeClient } from "../kdco-primitives/index.js"
+import { getProjectId, logWarn } from "../kdco-primitives/index.js"
+import { parsePersistedLaunchMetadata, serializePersistedLaunchMetadata } from "./launch-context.js"
 
 // =============================================================================
 // TYPES

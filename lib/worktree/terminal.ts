@@ -12,7 +12,7 @@ import * as fs from "node:fs/promises"
 import * as os from "node:os"
 import * as path from "node:path"
 import { z } from "zod"
-import type { OpencodeClient } from "../kdco-primitives"
+import type { OpencodeClient } from "../kdco-primitives/index.js"
 import {
 	escapeAppleScript,
 	escapeBash,
@@ -23,7 +23,7 @@ import {
 	Mutex,
 	TimeoutError,
 	withTimeout,
-} from "../kdco-primitives"
+} from "../kdco-primitives/index.js"
 
 // =============================================================================
 // TEMP SCRIPT HELPER
@@ -1044,7 +1044,7 @@ export async function openLinuxTerminal(cwd: string, argv?: string[]): Promise<T
 				}
 				default:
 					result = { tried: false, success: false }
-			}
+				}
 
 			if (result.success) {
 				return { success: true }

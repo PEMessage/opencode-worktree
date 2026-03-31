@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "@kdco/opencode-worktree",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "OpenCode plugin that creates isolated git worktrees with automatic terminal spawning",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "clean": "rm -rf dist",
+        "build": "npm run clean && tsc",
+        "prepublishOnly": "npm run build",
+        "dev": "opencode plugin dev",
+        "typecheck": "tsc --noEmit"
+    },
+    "keywords": [
+        "opencode",
+        "opencode-plugin",
+        "plugin",
+        "worktree",
+        "git",
+        "terminal"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kdcokenny/opencode-worktree.git"
+    },
+    "bugs": {
+        "url": "https://github.com/kdcokenny/opencode-worktree/issues"
+    },
+    "homepage": "https://github.com/kdcokenny/opencode-worktree#readme",
+    "author": "kdco",
+    "license": "MIT",
+    "peerDependencies": {
+        "@opencode-ai/plugin": ">=0.13.7"
+    },
+    "dependencies": {
+        "@opencode-ai/sdk": "^1.3.2",
+        "jsonc-parser": "^3.3.1",
+        "zod": "^4.3.6"
+    },
+    "devDependencies": {
+        "@opencode-ai/plugin": "^1.3.2",
+        "@types/node": "^25.5.0",
+        "typescript": "^6.0.2"
+    },
+    "files": [
+        "dist/",
+        "README.md",
+        "LICENSE"
+    ]
+}
