@@ -10,7 +10,7 @@
         "clean": "rm -rf dist",
         "build": "npm run clean && tsc",
         "prepublishOnly": "npm run build",
-        "dev": "opencode plugin dev",
+        "opencode": "OPENCODE_CONFIG=.dev/opencode.jsonc opencode",
         "typecheck": "tsc --noEmit"
     },
     "keywords": [
