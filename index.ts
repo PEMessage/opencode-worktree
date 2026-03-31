@@ -18,7 +18,7 @@ import * as os from "node:os"
 import * as path from "node:path"
 import { type Plugin, tool } from "@opencode-ai/plugin"
 import type { Event } from "@opencode-ai/sdk"
-import type { OpencodeClient } from "./lib/kdco-primitives/types"
+import type { OpencodeClient } from "./kdco-primitives/types"
 
 /** Logger interface for structured logging */
 interface Logger {
@@ -31,14 +31,14 @@ interface Logger {
 import { parse as parseJsonc } from "jsonc-parser"
 import { z } from "zod"
 
-import { getProjectId } from "./lib/kdco-primitives/get-project-id"
+import { getProjectId } from "./kdco-primitives/get-project-id"
 import {
 	type ActiveLaunchContext,
 	buildSessionLaunchArgv,
 	parseActiveLaunchContext,
 	serializePersistedLaunchMetadata,
 	toPersistedLaunchMetadata,
-} from "./lib/worktree/launch-context"
+} from "./worktree/launch-context"
 import {
 	addSession,
 	clearPendingDelete,
@@ -48,8 +48,8 @@ import {
 	initStateDb,
 	removeSession,
 	setPendingDelete,
-} from "./lib/worktree/state"
-import { openTerminal, type TerminalResult } from "./lib/worktree/terminal"
+} from "./worktree/state"
+import { openTerminal, type TerminalResult } from "./worktree/terminal"
 
 /** Maximum retries for database initialization */
 const DB_MAX_RETRIES = 3

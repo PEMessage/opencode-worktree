@@ -19,6 +19,6 @@
         "sourceMap": true,
         "types": ["node", "bun"]
     },
-    "include": ["index.ts", "lib/**/*"],
+    "include": ["index.ts", "worktree/**/*", "kdco-primitives/**/*"],
     "exclude": ["node_modules", "dist", "logs", "ref"]
 }
