@@ -23,12 +23,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pemessage/opencode-worktree.git"
+        "url": "git+https://github.com/PEMessage/opencode-worktree.git"
     },
     "bugs": {
-        "url": "https://github.com/pemessage/opencode-worktree/issues"
+        "url": "https://github.com/PEMessage/opencode-worktree/issues"
     },
-    "homepage": "https://github.com/pemessage/opencode-worktree#readme",
+    "homepage": "https://github.com/PEMessage/opencode-worktree#readme",
     "author": "pemessage",
     "license": "MIT",
     "peerDependencies": {
